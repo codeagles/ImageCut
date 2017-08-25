@@ -33,7 +33,7 @@ public class ImageCutUtil {
 	    for (int x = 0; x < rows; x++) {  
 	        for (int y = 0; y < cols; y++) {  
 	            //设置小图的大小和类型  
-	            imgs[count] = new BufferedImage(chunkWidth, chunkHeight, image.getType());  
+	            imgs[count] = new BufferedImage(chunkWidth, chunkHeight, image.getType()); //容易产生内存溢出，将JVM内存调大。
 	            //写入图像内容  
 	            Graphics2D gr = imgs[count++].createGraphics();  
 	            gr.drawImage(image, 0, 0,   
