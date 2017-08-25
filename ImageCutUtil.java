@@ -45,11 +45,14 @@ public class ImageCutUtil {
 	        }  
 	    }  
 	  
-	    // 输出小图  
-	    String name = file.getName();
-	    String[] suffix=name.split("\\.");
+// 	    // 输出小图  
+// 	    String name = file.getName();
+// 	    String[] suffix=name.split("\\.");
+// 	    for (int i = 0; i < imgs.length; i++) {  
+// 	        ImageIO.write(imgs[i], suffix[1], new File("D:\\image\\split\\"+suffix[0] + i + "."+suffix[1]));  
+// 	    }  
 	    for (int i = 0; i < imgs.length; i++) {  
-	        ImageIO.write(imgs[i], suffix[1], new File("D:\\image\\split\\"+suffix[0] + i + "."+suffix[1]));  
+	        ImageIO.write(imgs[i], "jpg", new File("D:\\image\\split\\img"+ + i + ".jpg"));  
 	    }  
 	    System.out.println("完成分割");
 	}
