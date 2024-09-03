@@ -13,7 +13,8 @@ public class ImageCutUtil {
 	
 	
 	public static void splitImage(String path) throws IOException {  
-	      
+
+		
 	    String originalImg = path;  
 	  
 	    // 读入大图  
