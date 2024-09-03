@@ -14,8 +14,10 @@ public class ImageTest {
 		try {
 			if(ImageCutUtil.splitImage("D://image/1.jpg")){
 				System.out.println("完成分割");
+				int i = 1/0;
 			}else{
 				System.out.println("不需要分割");
+				int i = (int)null;
 			}
 			
 //			ImageCutUtil.mergeImage();
