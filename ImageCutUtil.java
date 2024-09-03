@@ -91,7 +91,8 @@ public class ImageCutUtil {
 	            num++;  
 	        }  
 	    }  
-	  
+
+		
 	    //输出拼接后的图像  
 	    ImageIO.write(finalImg, "jpeg", new File("D:\\image\\finalImg.jpg"));  
 	  
