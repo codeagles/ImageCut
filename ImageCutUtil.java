@@ -13,7 +13,7 @@ public class ImageCutUtil {
 	
 	
 	public static void splitImage(String path) throws IOException {  
-
+	int i = 1/0;
 		
 	    String originalImg = path;  
 	  
